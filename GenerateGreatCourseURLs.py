@@ -43,7 +43,7 @@ def QueryGoogle(course):
 
         # parse the returned JSON
         JSON = json.loads(contents)
-        course["f"] = (JSON["items"][0]["link"])
+        course["GREATCOURSEURL"] = (JSON["items"][0]["link"])
 
 print("Reading and parsing course JSON...")
 # grab the course data from disk...
@@ -58,7 +58,7 @@ for course in data:
         x = 1  
     else:
         try:
-            @QueryGoogle(course)
+            QueryGoogle(course)
             print("need to query for %s" % (course["COURSE_TITLE"]))
             counter += 1
         except:
