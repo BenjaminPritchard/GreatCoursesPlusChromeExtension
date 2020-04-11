@@ -43,7 +43,7 @@ def QueryGoogle(course):
 
         # parse the returned JSON
         JSON = json.loads(contents)
-        course["GREATCOURSEURL"] = (JSON["items"][0]["link"])
+        course["f"] = (JSON["items"][0]["link"])
 
 print("Reading and parsing course JSON...")
 # grab the course data from disk...
@@ -69,4 +69,4 @@ print("%d total courses processed! " % counter)
 # dump the output (which will include the Great Course URL!!) back out to disk...
 print("dump .JSON back to disk...")
 with open('courseOutput.JSON', 'w') as output_json_file:  
-	json.dump(data, output_json_file, indent=4)
+    json.dump(data, output_json_file, indent=4)
