@@ -1,4 +1,12 @@
-#About
+# Update
+
+This repo is no longer maintained. As of 2021, The Great Courses Plus has been incorporated into https://www.wondrium.com/, and this extension is no longer needed.
+
+The extension itself is still available through the Chrome Web Store:
+
+https://chrome.google.com/webstore/detail/great-courses-link-for-gr/kpejmkgabbfpmilcpgndoankbkbkmmee
+
+# About
 
 The Great Courses Plus is a streaming version of the Great Courses, both of which are offered by The Teaching Company. 
 
